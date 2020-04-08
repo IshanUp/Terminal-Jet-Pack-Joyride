@@ -1,0 +1,48 @@
+By : Ishan Sanjeev Upadhyay 
+     2018114009
+
+1. About the game
+This game was inspired from Jetpack Joyride https://en.wikipedia.org/wiki/Jetpack_Joyride
+
+2.Description of Classes
+
+Board : contains information such as rows and columns of the entire map, it generates an empty map and prints the map
+
+coin : contains information about coin such as it's symbol
+
+Generate : inherits from board and places beams ,coins etc. onto the map , it keeps a track of where the things were put and handles the removal of those objects as well. 
+
+Mandalorian : contains the information about the mandolorian like its shape , coordinates , lives etc. Also used to place and move mandalorian on the map
+
+beam : contains information about beam such as symbol of horizontal , vertical and slanted beams
+
+Bossman : contains relevant information about the boss like its shape , coordinates, lives etc. Also used to place and move the boss on the map
+
+
+Bullet : Mandalorian's bullet containts information about the bullet such as its shape , coordinates , also used to move the bullet
+
+speed : contains relevant information such as symbol for speed boost
+
+bossBull : inherits from Bullet and changes things like shape ,move function and enemy to be in accordance to the boss's position .
+
+magnet : contains info about magnet and it's symbol
+
+shield : contains information about the sheld such as its symbol
+
+ 
+
+3. Instructions to play
+
+python3 game.py
+
+w,a,d to jump , move left and move right respectively
+press b to shoot bullets
+press spacebar for shield 
+press q to quit
+
+4. Requirements 
+    -python3 
+    -colorama
+5. Special feature
+    -Trailing effects during speed boost and jetpacking upwards
+    -High Score feature
